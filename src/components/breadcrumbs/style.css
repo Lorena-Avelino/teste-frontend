@@ -1,0 +1,37 @@
+.breadCrumbs {
+    background-color: #fff;
+    width: 1396px;
+    height: 65px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 23.57px;
+    font-weight: 500;
+}
+.breadCrumbs .combinedShape{
+    margin-left: 27px;
+}
+
+.breadCrumbs .retangle{
+    width: 1.071px;
+    height: 33.001px;
+    background: #DFDFDF;
+}
+
+.breadCrumbs .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.breadCrumbs .menu .barra {
+    color: #B1B0B2;
+    font-weight: 400;
+}
+
+.breadCrumbs .menu .principal{
+    color: #00B39D;
+    font-weight: 400;
+}
