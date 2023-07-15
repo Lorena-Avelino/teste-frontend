@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import BreadCrumbs from './components/breadcrumbs'
+import Report from './components/report'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <BreadCrumbs />
+      <Report />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
