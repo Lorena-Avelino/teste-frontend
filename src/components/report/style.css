@@ -1,0 +1,62 @@
+.report {
+  max-width: 1396px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 24px;
+  text-align: left;
+  padding: 16px 26px;
+}
+
+.report .title {
+  margin-bottom: 24px;
+}
+
+.report .resume-total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.report .resume-total .total {
+  text-align: right;
+}
+
+.report .resume-total .total .total-transacao {
+  color: #343234;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.report .retangle {
+  width: 1344.574px;
+  height: 1px;
+  flex-shrink: 0;
+  background: #e3e2e3;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.report .papeis-negociados {
+  display: grid;
+  grid-gap: 8px 127px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  grid-template: auto / auto auto;
+}
+
+.report .papeis-negociados .papel-negociado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.report .papeis-negociados .papel-negociado .linha-pontilhada {
+  border-top: 2px dashed #c5c5c5;
+  width: 100%;
+}
+
+.report .papeis-negociados .papel-negociado .quantidade-transacoes {
+  color: #343234;
+  font-size: 12px;
+  font-weight: 700;
+}
