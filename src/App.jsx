@@ -3,6 +3,7 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import BreadCrumbs from './components/breadcrumbs'
+import NewRobot from './components/newrobot'
 import Report from './components/report'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
       <BreadCrumbs />
       <Report />
+      <NewRobot />
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
