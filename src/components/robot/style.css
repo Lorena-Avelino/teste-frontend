@@ -1,0 +1,59 @@
+.robots {
+    width: 100%;
+    display: grid;
+    grid-gap: 16px 25px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    margin-top: 24px;
+    box-sizing: border-box;
+}
+
+.robots .robot{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
+    text-align: left;
+    padding: 16px 26px;
+}
+
+.robots .robot .robot-status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.robots .robot .robot-status .name {
+    color: #343234;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.robots .robot .robot-id{
+    color: #B1B0B2;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.robots .robot .dia {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.robots .robot .dia .saldo {
+    display: flex;
+    flex-direction: column;
+}
+
+.robots .robot .dia .saldo .saldo-diario {
+    display: flex;
+    gap: 5px;
+}
+
+.robots .robot .dia .trades {
+    text-align: right;
+}
+
+.robots .robot .dia .trades .trade {
+    color: #5F5D60;
+    font-size: 20px;
+    font-weight: 700;
+}

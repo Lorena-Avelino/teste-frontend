@@ -1,0 +1,22 @@
+.robot-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.robot-status .oval {
+    width: 8.571px;
+    height: 8px;
+    background: #15B8A1;
+    border-radius: 50%;
+}
+
+.robot-status .oval.stopped {
+    background: #FF4501;
+}
+
+.robot-status .name-status {
+    color: #888689;
+    font-size: 14px;
+    font-weight: 400;
+}

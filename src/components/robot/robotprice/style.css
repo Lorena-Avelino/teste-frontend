@@ -1,0 +1,74 @@
+.robot-price {
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid #E3E2E3;
+    background: #FFF;
+    padding: 13px 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.robot-price .number {
+    color: #5F5D60;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.robot-price .name {
+    display: flex;
+    flex-direction: column;
+    color: #959AA2;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.robot-price .name .compra {
+    color: #343234;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.robot-price .preco {
+    display: flex;
+    flex-direction: column;
+    color: #B1B0B2;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.robot-price .preco .rendimento {
+    display: flex;
+    align-items: center;
+    color: #00B39D;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 5px;
+}
+
+.robot-price .preco .rendimento .seta {
+    width: 0;
+    height: 0;
+}
+
+.robot-price .preco .rendimento .seta.alta{
+    
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #00B39D;
+}
+
+.robot-price .preco .rendimento .seta.queda {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FF4501;
+}
+
+.robot-price .preco .rendimento.queda {
+    color: #FF4501;
+}
