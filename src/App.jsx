@@ -5,15 +5,19 @@ import './App.css'
 import BreadCrumbs from './components/breadcrumbs'
 import NewRobot from './components/newrobot'
 import Report from './components/report'
+import Robot from './components/robot'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <BreadCrumbs />
-      <Report />
-      <NewRobot />
+      <div className='container'>
+        <BreadCrumbs />
+        <Report />
+        <NewRobot />
+        <Robot />
+      </div>
       {/* <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
