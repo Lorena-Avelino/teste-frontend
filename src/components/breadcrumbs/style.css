@@ -12,13 +12,14 @@
     padding: 16px 26px;
     box-sizing: border-box;
 }
+
 .breadCrumbs .combinedShape{
     margin-left: 27px;
 }
 
 .breadCrumbs .retangle{
     width: 1.071px;
-    height: 33.001px;
+    height: 33px;
     background: #DFDFDF;
 }
 
@@ -35,4 +36,20 @@
 .breadCrumbs .menu .principal{
     color: #00B39D;
     font-weight: 400;
+}
+
+@media(max-width: 400px){
+    .breadCrumbs .combinedShape{
+        margin-left: 0;
+    }
+
+    .breadCrumbs .menu{
+        display: grid;
+        grid-template: auto / auto auto;
+        grid-gap: 2px;
+    }
+
+    .breadCrumbs .retangle{
+        height: 50px;
+    }
 }
