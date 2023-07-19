@@ -46,7 +46,7 @@ const Report = () => {
             <div className='resume-total'>
                 <div className='resume'>
                     <SubTitle title='Resumo de movimentação'/>
-                    <Saldo title='-R$220,00'/>
+                    <Saldo title='220,00'/>
                 </div>
                 <div className='total'>
                     <SubTitle title='Total de transações realizadas'/>

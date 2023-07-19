@@ -7,9 +7,9 @@ const RobotPrice = ({number, name, preco, valor}) => {
             <div className='name'>{name}<span className='compra'>Compra</span></div>
             <div className='preco'>
                 {preco}
-                <div className='rendimento'>
-                    <div className='seta alta'></div>
-                    <span>R${valor}</span>
+                <div className={`rendimento ${valor < 0 ? 'queda' : 'alta'}`}>
+                    <div className={`seta ${valor < 0 ? 'queda' : 'alta'}`}></div>
+                    <span>{valor < 0 ? `-R$${Math.abs(valor)}` : `R$${valor}`}</span>
                 </div>
             </div>
         </div>
