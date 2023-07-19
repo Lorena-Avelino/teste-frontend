@@ -1,26 +1,37 @@
 .background {
     width: 100vw;
-    height: 100vh;
     background-color: rgba(0, 179, 158, 0.699999988079071);
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: fixed;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overflow {
+    overflow: hidden;
 }
 
 .add-new-robot {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-content: center;
     padding: 24px;
     background: #fff;
     border-radius: 2px;
     box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.10);
     margin: 0 auto;
+    max-width: 442px;
     position: absolute;
+    overflow: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 80%
 }
 
 .add-new-robot .janela{
@@ -57,7 +68,6 @@
     font-size: 16px;
     font-weight: 500;
     margin: 24px 0 24px 0;
-
 }
 
 .add-new-robot .formulario .submeter {

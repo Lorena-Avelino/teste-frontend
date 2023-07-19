@@ -3,7 +3,7 @@ import addRobot from '../../assets/AddRobot.svg'
 import {useState} from "react"
 import AddNewRobot from '../addnewrobot'
 
-const NewRobot = () => {
+const NewRobot = ({updateListRobot}) => {
     const[isAddNewRobotOpen, setIsAddNewRobotOpen] = useState(false)
 
     const handleOpenAddNewRobot = () => {
@@ -21,7 +21,7 @@ const NewRobot = () => {
             <h2 className='new'>Adicionar novo Robô</h2>
             <p className='quantity-robot'>Você possui <strong>2 Robôs</strong> disponíveis</p>
         </div>
-        <AddNewRobot isOpen={isAddNewRobotOpen} onRequestClose={handleCloseAddNewRobot} ariaHideApp={false} shouldCloseOnOverlayClick={true}/>
+        <AddNewRobot isOpen={isAddNewRobotOpen} onRequestClose={handleCloseAddNewRobot} ariaHideApp={false} shouldCloseOnOverlayClick={true} updateListRobot={updateListRobot}/>
     </div>
     )
 }

@@ -5,7 +5,8 @@
 }
 
 .robot-status .oval {
-    width: 8.571px;
+    min-width: 8.571px;
+    max-width: 8.571px;
     height: 8px;
     background: #15B8A1;
     border-radius: 50%;

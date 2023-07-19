@@ -1,9 +1,6 @@
-import { useState } from "react"
 import Strategy from "../strategy"
 
-const StrategyGroup = ({strategies}) => {
-    const[selectedStrategy, setSelectedStrategy] = useState(null)
-
+const StrategyGroup = ({strategies, selectedStrategy, setSelectedStrategy}) => {
     const handleStrategyChange = (value) => {
         setSelectedStrategy(value)
     }
@@ -11,7 +8,7 @@ const StrategyGroup = ({strategies}) => {
     return (
         <div>
             {strategies.map((strategy) => (
-                <Strategy key={strategy.value} name={strategy.value} value={strategy.value} checked={selectedStrategy === strategy.value} onChange={() => handleStrategyChange(strategy.value)}/>
+                <Strategy key={strategy.id} name={strategy.name} value={strategy.id} checked={selectedStrategy === strategy.id} onChange={() => handleStrategyChange(strategy.id)}/>
             ))}
         </div>
     )
