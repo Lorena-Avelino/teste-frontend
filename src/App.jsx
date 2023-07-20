@@ -31,7 +31,7 @@ function App() {
       <div className='container'>
         <BreadCrumbs />
         <Report />
-        <NewRobot updateListRobot={fetchRobots}/>
+        <NewRobot disponiveis={robots.length} updateListRobot={fetchRobots}/>
         <Robot robots={robots}/>
       </div>
     </>
