@@ -1,0 +1,9 @@
+.papelNegociado{
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #00B39D;
+    padding: 3px 6px;
+    border-radius: 2px;
+    text-transform: uppercase;
+}

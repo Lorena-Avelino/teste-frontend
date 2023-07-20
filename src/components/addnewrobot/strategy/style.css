@@ -1,0 +1,25 @@
+.strategy {
+    width: 100%;
+    padding: 24px;
+    border-radius: 2px;
+    border: 1px solid #E3E2E3;
+    background: #FFF;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.strategy label {
+    cursor: pointer;
+}
+
+.strategy:hover {
+    background-color: #E3E2E3;
+}
+
+.strategy.selected {
+    background: #FF4501;
+    border: 1px solid transparent;
+    color: #fff;
+}

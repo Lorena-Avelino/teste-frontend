@@ -11,4 +11,4 @@ const BreadCrumbs = () => {
     )
 }
 
-export default BreadCrumbs;
+export default BreadCrumbs

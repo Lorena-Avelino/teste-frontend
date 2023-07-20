@@ -1,0 +1,9 @@
+.saldo {
+    color: #00B39D;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.saldo.negativo {
+    color: #FF4501;
+}

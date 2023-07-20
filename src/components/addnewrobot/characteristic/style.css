@@ -1,0 +1,20 @@
+.characteristic {
+    display: flex;
+    flex-direction: column;
+    color: #343234;
+    font-size: 12px;
+    font-weight: 400;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.input {
+    padding: 14px;
+    border-radius: 2px;
+    border: 1px solid #E3E2E3;
+    color: #888689;
+}
+
+.input:focus {
+    outline: none;
+}

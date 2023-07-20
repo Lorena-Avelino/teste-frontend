@@ -3,33 +3,37 @@
 // import viteLogo from '/vite.svg'
 import './App.css'
 import BreadCrumbs from './components/breadcrumbs'
+import NewRobot from './components/newrobot'
+import Report from './components/report'
+import Robot from './components/robot'
+import { useEffect, useState } from 'react'
+import { getRobots } from './services/api'
 
 function App() {
-  // const [count, setCount] = useState(0)
+  const [robots, setRobots] = useState([])
 
+    const fetchRobots = async () => {
+        try{
+            const response = await getRobots()
+            setRobots(response)
+        }catch(error){
+            alert("Falha ao buscar robos");
+        }finally{
+            console.log("fez a chamada")
+        }
+    }
+
+    useEffect(() => {
+        fetchRobots()
+    }, [])
   return (
     <>
-      <BreadCrumbs />
-      {/* <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='container'>
+        <BreadCrumbs />
+        <Report />
+        <NewRobot disponiveis={robots.length} updateListRobot={fetchRobots}/>
+        <Robot robots={robots}/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p> */}
     </>
   )
 }
